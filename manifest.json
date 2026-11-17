@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Screentime",
+  "version": "1.0.0",
+  "description": "A private, local new tab dashboard with screen time, a to-do list, and a calendar.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "idle"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Open new tab page"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "chrome_settings_overrides": {
+    "homepage": "newtab.html"
+  },
+  "incognito": "not_allowed",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "screentime@local.nathan",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}
