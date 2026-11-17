@@ -94,3 +94,4 @@ The manifest declares `data_collection_permissions.required: ["none"]` because n
 - Site colors are generated locally; the extension never fetches favicons from third-party services.
 - Clearing browser extension data or uninstalling the add-on removes screen-time history and to-dos.
 - Requires Firefox 142 or newer on desktop.
+# new-tab-extension
